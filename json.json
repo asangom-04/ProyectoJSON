@@ -1,0 +1,111 @@
+{
+"nombreAplicacion": "Sistema Integrado de Gestión Empresarial",
+"versión": "3.0",
+"entorno": "Producción",
+"baseDatos": {
+"tipo": "PostgreSQL",
+"servidor": "192.168.1.200",
+"puerto": "5432",
+"usuario": "dbuser",
+"contraseña": "dbpass",
+"nombreBD": "gestion_empresa",
+"TABLAS": [
+{
+"nombre": "clientes",
+"columnas": [
+"id",
+"nombre",
+"apellido",
+"dni",
+"telefono",
+"email",
+"direccion",
+"fecha_registro"
+]
+},
+{
+"nombre": "productos",
+"columnas": [
+"id",
+"nombre",
+"descripcion",
+"precio",
+"stock",
+"fecha_ingreso",
+"categoria"
+]
+},
+{
+"nombre": "a",
+"columnas": [
+"id",
+"nombre",
+"descripcion",
+"precio",
+"stock",
+"fecha_ingreso",
+"categoria"
+]
+},
+{
+"nombre": "ventas",
+"columnas": [
+"id",
+"cliente_id",
+"producto_id",
+"fecha",
+"cantidad",
+"total",
+"metodo_pago"
+]
+},
+{
+"nombre": "proveedores",
+"columnas": [
+"id",
+"nombre",
+"telefono",
+"email",
+"direccion"
+]
+},
+{
+"nombre": "compras",
+"columnas": [
+"id",
+"proveedor_id",
+"producto_id",
+"fecha",
+"cantidad",
+"total"
+]
+},
+{
+"nombre": "compras",
+"columnas": [
+"id",
+"producto_id",
+"producto_id",
+"fecha",
+"cantidad",
+"total"
+]
+}
+]
+},
+"correoElectronico": {
+"servidor": "smtp.gmail.com",
+"puerto": "587",
+"usuario": "mi_correo@gmail.com",
+"contraseña": "mi_contraseña",
+"asuntoVentas": "Nueva Venta Realizada",
+"cuerpoMensajeVentas": "Se ha realizado una nueva venta en el sistema. Por favor, revise los detalles en la sección de ventas.",
+"asuntoCompras": "Nueva Compra Realizada",
+"cuerpoMensajeCompras": "Se ha realizado una nueva compra en el sistema. Por favor, revise los detalles en la sección de compras."
+},
+"logs": {
+"rutaArchivo": "./logs/app.log",
+"nivel": "WARNING"
+},
+"puertoServidor":"8080"
+}
