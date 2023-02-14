@@ -25,19 +25,7 @@
 },
 {
 "nombre": "productos",
-"columnas": [
-"id",
-"nombre",
-"descripcion",
-"precio",
-"stock",
-"fecha_ingreso",
-"categoria"
-]
-},
-{
-"nombre": "a",
-"columnas": [
+"aaaaaa": [
 "id",
 "nombre",
 "descripcion",
@@ -74,17 +62,6 @@
 "columnas": [
 "id",
 "proveedor_id",
-"producto_id",
-"fecha",
-"cantidad",
-"total"
-]
-},
-{
-"nombre": "compras",
-"columnas": [
-"id",
-"producto_id",
 "producto_id",
 "fecha",
 "cantidad",
