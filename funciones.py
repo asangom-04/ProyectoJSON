@@ -1,7 +1,6 @@
 import json
 with open('json.json', 'r') as file:
-        base_datos = json.load(file)
-
+    base_datos = json.load(file)
 
 
 def listar_tablas(base_datos):
@@ -25,10 +24,12 @@ def buscar_producto(base_datos):
     nombre_producto = input("Ingrese el nombre del producto a buscar: ")
     tablas = base_datos["baseDatos"]["TABLAS"]
     for tabla in tablas:
-        if tabla["nombre"] == nombre_producto:
-            for producto in tabla["columnas"]:
-                print(producto)
-    print("Producto no encontrado")
+        if tabla["nombre"] == "productos":
+            try:
+                for caracteristicas in tabla[nombre_producto]:    
+                    print(caracteristicas)
+            except KeyError:
+                print("Producto no encontrado")
 
 
 def mostrar_proveedores(base_datos):
