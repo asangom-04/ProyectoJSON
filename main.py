@@ -4,7 +4,7 @@ import json
 with open('json.json', 'r') as file:
         base_datos = json.load(file)
         #return base_datos
-
+        #print(base_datos)
         
 
 
@@ -27,6 +27,7 @@ while True:
         funciones.contar_productos(base_datos)
     elif opcion == '3':
         funciones.buscar_producto(base_datos)
+    
     elif opcion == '4':
         funciones.mostrar_proveedores(base_datos)
     elif opcion == '5':
